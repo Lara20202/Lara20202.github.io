@@ -1,0 +1,101 @@
+body{
+    background-color:white;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+}
+h1 {
+    font-weight:bold italic;
+}
+h1:hover {
+    color: green;
+}
+th,td {
+    padding: 20px;
+}
+
+td {
+    text-align: center;
+}
+#buttonID {
+    background-color: rgb(19, 87, 45);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    margin: 7px;
+}
+.buttonClass {
+    background-color: rgb(19, 87, 45);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    margin: 7px;
+}
+#navbar ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(19, 87, 45);
+    margin-top: 0;
+}
+#navbar li{
+    float: left;
+    display:block;
+    padding: 16px 20px;
+    font-family: courier;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(66, 6, 71);
+}
+#navbar li:hover{
+    background-color: rgb(243, 243, 243);
+    transition-duration: 0.5s;
+}
+#navbar a{
+    color:white;
+    text-decoration:none;
+}
+#navbar #active{
+    background-color:rgb(8, 34, 2);
+}
+#carousel{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:30%;
+}
+#carousel img{
+    width:500px;
+    height: 300px
+}
+#carousel .hiddenSlide{
+    display:none;
+}
+#carousel #activeslide{
+    display: block;
+    animation-name:fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    from {opacity: 0.4}
+    to{
+        opacity:1;
+
+    }
+}
+#carousel .slideArrow{
+    cursor: pointer;
+    user-select: none;
+    font-size: 48px;
+    color: black;
+}
+#carousel .right{
+    padding-left: 450px;
+}
+#carousel .slideArrow:hover{
+    color: rgb(230, 230, 230); 
+    transition-duration: 0.5s;
+}
+
